@@ -1,10 +1,10 @@
-package Arrays.compare;
+package Arrays.toString;
+
 import java.util.Arrays;
+
 public class CharecterArrays {
-   public static void main(String[] args) {
-	int arr[] = {'a', 'c', 't'};
-	int arr2[] = {'a', 'c', 't'};
-	int result = Arrays.compare(arr, arr2);
-	System.out.println(result);
-}
+	public static void main(String[] args) {
+		char[] ch = { 'd', 'b', 'f', 'r' };
+		System.out.println(Arrays.toString(ch));
+	}
 }
