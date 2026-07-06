@@ -1,0 +1,29 @@
+package array.practicewithfuntion3;
+
+public class MergeArray {
+	void mergeArr() {
+		int a[] = { 1, 2, 3 };
+		int b[] = { 4, 5, 6 };
+
+		int c[] = new int[a.length + b.length];
+
+		int k = 0;
+		for (int i = 0; i < a.length; i++) {
+			c[k] = a[k];
+			k++;
+        
+		}
+		for ( int i =0; i < b.length; i++) {
+			c[k] = b[i];
+			k++;
+		}
+		for (int i = 0; i < c.length; i++) {
+			System.out.println(c[i] + " ");
+		}
+	}
+	
+	public static void main(String[] args) {
+		MergeArray obj = new MergeArray();
+		obj.mergeArr();
+	}
+}

@@ -1,12 +1,16 @@
-package array.practice2;
+package array.practicewithfuntion3;
 
 public class StudentSeatNumber {
-
-	public static void main(String[] args) {
-		String student[] = { " trilok ", "nandan", "ravi", "gautaum" };
+	void studentSeat() {
+		String student[] = { "trilok", "nandan", "ravi " };
 		for (int i = 0; i < student.length; i++) {
 			System.out.println(student[i] + " seat number is " + i);
+
 		}
 	}
 
+	public static void main(String[] args) {
+		StudentSeatNumber obj = new StudentSeatNumber();
+		obj.studentSeat();
+	}
 }

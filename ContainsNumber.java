@@ -1,19 +1,26 @@
-package array.practice2;
+package array.practicewithfuntion3;
 
 public class ContainsNumber {
-
-	public static void main(String[] args) {
-		int arr[] = { 10, 34, 22, 10, 10 };
-		int target = 24;
-
+	static void containsNumber(int arr[], int num) {
 		boolean found = false;
-		for (int n : arr) {
-			if (n == target) {
+
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i] == num) {
 				found = true;
 				break;
 			}
-
 		}
-		System.out.println(found ? "found" : "not found ");
+		if (found) {
+			System.out.println("number found ");
+
+		} else {
+			System.out.println("number is not found ");
+		}
+
+	}
+
+	public static void main(String[] args) {
+		int arr[] = { 10, 20, 40, 20, 15 };
+		containsNumber(arr, 16);
 	}
 }

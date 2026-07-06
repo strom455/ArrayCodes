@@ -1,17 +1,18 @@
-package array.practice2;
+package array.practicewithfuntion3;
 
 public class OddNumber {
-
-	public static void main(String[] args) {
-		int arr[] = { 2, 3, 4, 5, 6, 7, 8, 9 };
-		int count = 0;
-
+	void odd(int arr[]) {
 		for (int i = 0; i < arr.length; i++) {
-			if (arr[i] % 2 != 0) {
-				count++;
+			if (arr[i] % 2 == 0) {
+				System.out.println(arr[i]);
 			}
 		}
-		System.out.println("odd number is " + count);
 	}
 
+	public static void main(String args[]) {
+		int arr[] = { 10, 15, 20, 25, 16, 15 };
+		OddNumber obj = new OddNumber();
+		obj.odd(arr);
+
+	}
 }

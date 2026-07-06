@@ -1,18 +1,21 @@
-package array.practice2;
+package array.practicewithfuntion3;
 
 public class OccurencesNumber {
+	void occurence(int arr[]) {
+		int count = 0;
+		int num = 20;
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i] == num) {
+				count++;
 
-	public static void main(String[] args) {
-    int arr[] = {10,23,4,8,22,4,4};
-    int target = 4;
-    int count = 0;
-    
-    for ( int n : arr) {
-    	if ( n == target) {
-    		count++;
-    	}
-    }
-    System.out.println(count);
+			}
+		}
+		System.out.println("occurence of " + num + " = " + count);
 	}
 
+	public static void main(String[] args) {
+		int arr[] = { 10, 20, 23, 45, 20 };
+		OccurencesNumber obj = new OccurencesNumber();
+		obj.occurence(arr);
+	}
 }

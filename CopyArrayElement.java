@@ -1,18 +1,23 @@
-package array.practice2;
+package array.practicewithfuntion3;
 
 public class CopyArrayElement {
+	void copyArrayElement(int arr[]) {
+		int copy[] = new int[arr.length];
 
-	public static void main(String[] args) {
-    int arr[] = {10,15,23,16,8};
-    int arr1[] = new int[arr.length];
-    
-    for (int i = 0; i < arr.length; i++) {
-    	arr1[i] = arr[i];
-        			
-    }
-    for (int n : arr1 ) {
-    	System.out.println(n);
-    }
+		for (int i = 0; i < arr.length; i++) {
+			copy[i] = arr[i];
+
+		}
+		System.out.println("copyed array");
+
+		for (int i = 0; i < copy.length; i++) {
+			System.out.println(copy[i] + " ");
+		}
 	}
 
+	public static void main(String[] args) {
+		int arr[] = { 1, 2, 3, 4, 5 };
+		CopyArrayElement obj = new CopyArrayElement();
+		obj.copyArrayElement(arr);
+	}
 }

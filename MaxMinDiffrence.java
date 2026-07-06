@@ -1,26 +1,29 @@
-package array.practice2;
+package array.practicewithfuntion3;
 
 public class MaxMinDiffrence {
-
-	public static void main(String[] args) {
-		int arr[] = { 6, 7, 9, 24, 34, 21 };
+	void maxMin(int arr[]) {
 		int max = arr[0];
 		int min = arr[0];
 
 		for (int i = 0; i < arr.length; i++) {
-
-			if (arr[i] < min) {
-				min = arr[i];
-			}
 			if (arr[i] > max) {
 				max = arr[i];
-			}
 
+			}
+			if (arr[i] < min) {
+				min = arr[i];
+
+			}
 		}
-		int diffrence = max - min;
-		System.out.println("maximum " + max);
-		System.out.println("minimum" + min);
-		System.out.println("diffrence = " + diffrence);
+		System.out.println("maiximum number is " + max);
+		System.out.println("minimum number is " + min);
+
+	}
+
+	public static void main(String[] args) {
+		int arr[] = { 10, 12, 6, 7, 8, 9 };
+		MaxMinDiffrence obj = new MaxMinDiffrence();
+		obj.maxMin(arr);
 	}
 
 }

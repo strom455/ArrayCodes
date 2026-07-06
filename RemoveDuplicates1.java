@@ -1,23 +1,25 @@
 package array.practicewithfuntion3;
 
-public class RemoveDuplicates {
-	void duplicates() {
-		int arr[] = { 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6 };
+public class RemoveDuplicates1 {
+	void remove() {
+		int arr[] = { 1, 1, 2, 2, 3, 3, 4, 4 };
 		int j = 0;
+
 		for (int i = 1; i < arr.length; i++) {
+
 			if (arr[i] != arr[j]) {
 				j++;
 				arr[j] = arr[i];
+
 			}
 		}
 		for (int i = 0; i <= j; i++) {
 			System.out.println(arr[i] + " ");
-
 		}
 	}
 
 	public static void main(String[] args) {
-		RemoveDuplicates obj = new RemoveDuplicates();
-		obj.duplicates();
+		RemoveDuplicates1 obj = new RemoveDuplicates1();
+		obj.remove();
 	}
 }
